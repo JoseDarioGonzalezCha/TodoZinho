@@ -1,9 +1,8 @@
 import React from "react";
 
 import abacateLendo from "../../../assets/abacateLendo.png";
-
-import { BiGridSmall } from "react-icons/bi";
-import { FiSearch } from "react-icons/fi";
+import icon_vector from "../../../assets/icon_vector.png";
+import search_icon from "../../../assets/search_icon.png";
 
 import {
   StyledContent,
@@ -19,13 +18,13 @@ export const MenuHeader = () => {
     <StyledContent>
       <StyledMenuHeader>
         <StyledTitle>Menu</StyledTitle>
-        <BiGridSmall />
+        <img src={icon_vector} alt="icon vector" />
       </StyledMenuHeader>
 
       <StyledImg src={abacateLendo} alt="avocado reading" />
 
       <StyledMenu>
-        <FiSearch />
+        <img src={search_icon} alt="icon search" />
         <StyledInput type="text" placeholder="SEARCH" />
       </StyledMenu>
     </StyledContent>

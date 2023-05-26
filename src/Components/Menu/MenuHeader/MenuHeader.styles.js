@@ -39,7 +39,9 @@ export const StyledMenu = styled.div`
 
 export const StyledInput = styled.input`
   border: none;
+  background-color: #f2f2f2;
   margin-left: 10px;
+  outline: none;
 
   &::placeholder {
     color: #a0a603;
