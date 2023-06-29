@@ -29,10 +29,6 @@ export const TaskForm = () => {
     console.log("Tarea eliminada");
   };
 
-  useEffect(() => {
-    fetch();
-  }, []);
-
   return (
     <form onSubmit={handleSubmit}>
       <input
