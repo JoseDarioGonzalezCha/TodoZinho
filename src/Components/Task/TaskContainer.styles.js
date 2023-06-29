@@ -6,4 +6,5 @@ export const StyledSection = styled.section`
   height: 100%;
   border-radius: 15px;
   margin: 24px 0 40px 24px;
+  padding: 20px;
 `;

@@ -1,13 +1,11 @@
 import React from "react";
 
-import { StyledButtonContainer } from "./TaskButton.styles";
+import { StyledButton, StyledButtonContainer } from "./TaskButton.styles";
 
-export const TaskButton = () => {
+export const TaskButton = ({ onClick, text }) => {
   return (
     <StyledButtonContainer>
-      <button>DELETE TASK</button>
-      <button>SAVE CHANGE</button>
-      TaskButton
+      <StyledButton onClick={onClick}>{text}</StyledButton>
     </StyledButtonContainer>
   );
 };
