@@ -1,8 +1,9 @@
 import { GlobalStyle } from "./styles/global";
 
 import { MenuContainer } from "./Components/Menu/MenuContainer";
-import { TaskContainer } from "./Components/Task/TaskContainer";
+import { TaskFormContainer } from "./Components/TaskFormContainer/TaskFormContainer";
 import { Container } from "./Components/Container/Container.styles";
+import { ShowTaskContainer } from "./Components/ShowTask/ShowTaskContainer";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <GlobalStyle />
       <Container>
         <MenuContainer />
-        <TaskContainer />
+        <ShowTaskContainer />
+        <TaskFormContainer />
       </Container>
     </>
   );

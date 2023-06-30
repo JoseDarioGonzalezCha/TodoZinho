@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x:hidden ;
         scroll-behavior: smooth;
         
-        background-color: #E5E5E5;
+        background-color: #f2f2f2;
     }
 
 	button{

@@ -4,7 +4,7 @@ import { StyledSection } from "./TaskContainer.styles";
 import { TaskFormContainer } from "./TaskFormContainer/TaskFormContainer";
 import { SubTasks } from "./SubTasks/SubTasks";
 
-export const TaskContainer = () => {
+export const TaskFormContainer = () => {
   return (
     <StyledSection>
       <TaskFormContainer />
