@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
 import { TaskButton } from "../../Task/TaskButton/TaskButton";
+import { TaskCategory } from "../TaskCategory/TaskCategory";
+import { TaskDate } from "../TaskDate/TaskDate";
+import { SubTasks } from "../SubTasks/SubTasks";
+
+import { StyledForm, StyledInput, StyledTextarea } from "./TaskForm.styles";
 
 export const TaskForm = () => {
   const [tasks, setTasks] = useState([]);
@@ -32,22 +37,33 @@ export const TaskForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={tasks}
-        onChange={handleTaskChange}
-        placeholder="NAME"
-      />
+      <StyledForm>
+        <StyledInput
+          type="text"
+          value={tasks}
+          onChange={handleTaskChange}
+          placeholder="NAME"
+        />
 
-      <textarea
-        value={taskDescription}
-        onChange={handleDescriptionChange}
-        placeholder="DESCRIPTION"
-      />
+        <StyledTextarea
+          value={taskDescription}
+          onChange={handleDescriptionChange}
+          placeholder="DESCRIPTION"
+        />
+      </StyledForm>
 
-      <TaskButton onClick={handleAddTask} text="SAVE CHANGES" />
+      <div>
+        <TaskCategory />
+        <TaskDate />
+      </div>
 
-      <TaskButton onClick={handleDeleteTask} text="DELETE TASK" />
+      <SubTasks />
+
+      <div>
+        <TaskButton onClick={handleAddTask} text="SAVE CHANGES" />
+
+        <TaskButton onClick={handleDeleteTask} text="DELETE TASK" />
+      </div>
     </form>
   );
 };

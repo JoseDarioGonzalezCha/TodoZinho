@@ -1,10 +1,12 @@
 import React from "react";
 
+import { StyledDiv, StyledH3, StyledInput } from "./TaskCategory.styles";
+
 export const TaskCategory = () => {
   return (
-    <div>
-      <h3>LIST</h3>
-      <input type="date" />
-    </div>
+    <StyledDiv>
+      <StyledH3>LIST</StyledH3>
+      <StyledInput type="date" />
+    </StyledDiv>
   );
 };
